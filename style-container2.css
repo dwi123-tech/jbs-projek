@@ -1,0 +1,194 @@
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Kolom akan membungkus ke baris berikutnya */
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center; /* Pusatkan kolom secara horizontal */
+    align-items: center;    /* Pusatkan kolom secara vertikal */
+    gap: 20px;              /* Jarak antar kolom */
+    padding: 20px;          /* Ruang di dalam container */
+    box-sizing: border-box; /* Memastikan padding dihitung dalam lebar container */
+    transition: all 0.5s ease-in-out;
+}
+
+.flex {
+    flex: 0 1 600px;        /* Ukuran kolom tetap (maksimal 300px) */
+    display: flex;          /* Untuk menengah isi kolom */
+    align-items: center;    /* Tengah isi kolom secara vertikal */
+    justify-content: center; /* Tengah isi kolom secara horizontal */
+    text-align: center;     /* Pusatkan teks */
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column; /* Susunan vertikal */
+    align-items: center;   /* Elemen di tengah secara horizontal */
+    gap: 2rem;             /* Jarak antar elemen */
+    padding: 2rem;
+    width: 100%;     /* Membatasi lebar container */
+    margin: 0 auto;        /* Pusatkan container */
+}
+
+.judulC2 {
+    font-weight: 700;
+    font-size: 2.5rem; /* Lebih responsif */
+    color: #fff;
+    text-shadow: 0 0 5px 2px #fff; /* Efek glow ringan */
+    background: transparent;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 1.5px solid gold;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px 2px goldenrod; /* Efek bayangan */
+}
+
+.container-isi2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: transparent;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.deskripsi {
+    background: #1e1e1e; /* Warna latar belakang untuk fokus */
+    padding: 2rem;
+    border: 1.5px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px goldenrod; /* Efek bayangan */
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+    text-align: justify; /* Rapi rata kanan-kiri */
+    color: #ddd; /* Warna teks yang tidak terlalu putih */
+}
+
+.jbs-logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+    border: 1.5px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px goldenrod; /* Efek bayangan */
+    line-height:1.8;
+    padding: 2.8rem;
+}
+
+.jbs-logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Agar gambar tetap proporsional */
+    border: 5px solid #ffffff; /* Bingkai putih di sekitar gambar */
+    transition: .3s ease;
+    margin-bottom: 15px;
+}
+
+.jbs-logo img:hover {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 10px 5px #fff;
+    transition: .3s ease-in-out;
+}
+
+.next a {
+    display: inline-flex; /* Menggunakan flex supaya align-items dan justify-content bekerja */
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background: orange;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 0 5px 1px gold;
+    transition: transform 0.3s ease, padding 0.3s ease; /* Pindahkan transisi ke sini */
+}
+
+.next a:hover {
+    background: rgba(255, 217, 0, 0.443);
+    padding: 15px 50px; /* Perbesar padding */
+    transform: translate(0, -10px); /* Rotasi */
+}
+
+.ikon h1 {
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .container2 {
+        display: grid;
+    }
+
+    .judulC2 {
+        order: -1;
+        position: relative;
+        font-size: 20px;
+    }
+
+    .jbs-logo {
+        order: -1;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .jbs-logo img{
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .jbs-logo img:hover {
+        width: 120px;
+        height: 120px;
+        box-shadow: 0 0 10px 5px #fff;
+        transition: .3s ease-in-out;
+    }
+    
+    .next a:hover {
+        background: rgba(255, 217, 0, 0.443);
+        padding: 10px 20px; /* Perbesar padding */
+        transform: translate(0, -2px); /* Rotasi */
+    }
+    
+
+    .deskripsi {
+        order: 1;
+        font-size: 10px;
+        transition: .3s ease;
+    }
+
+    .deskripsi:hover {
+        font-size: 11.5px;
+        transition: .3s ease-in-out;
+    }
+
+    .container-isi2 {
+        display: grid;
+    }
+
+    .ikon h1 {
+        font-size: 15px;
+    }
+
+    .next a {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+}

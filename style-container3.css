@@ -1,0 +1,26 @@
+.container3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.container3 img {
+    width: 50%;
+    height: 90vh;
+    align-items: end;
+    justify-content: center;
+}
+
+.des1 {
+    font-weight: 700;
+    font-size: 2.5rem; /* Lebih responsif */
+    color: #fff;
+    text-shadow: 0 0 5px 2px #fff; /* Efek glow ringan */
+    background: blue;
+    margin: 10px auto;
+    text-align: center;
+    border: 1.5px solid gold;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px 2px goldenrod; /* Efek bayangan */
+    width: 50%;
+}

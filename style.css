@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sosmed {
+    gap: 5rem;
+}
+
+.sosmed i {
+    color: white;
+    padding: 1rem 1.2rem;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    cursor: default;
+}
+
+div {
+    cursor: default;
+}
+
+body {
+    background: #000;
+    background-image: url(assets/v1016-b-07.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.font-1 {
+    font-family: Edu AU VIC WA NT Hand;
+}
+
+.font-2 {
+    font-family: Sevillana;
+}
+
+.font-3 {
+    font-family: Faculty Glyphic;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 15vh;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 1px solid goldenrod;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #11111183;
+}
+
+.logo {
+    position: relative;
+    margin: 10px 20px;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.logo-desk {
+    color: gold;
+}
+
+.bar {
+    display: flexbox;
+    margin-right: 100px;
+}
+
+.bar a{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem 2rem;
+    margin: 2px 10px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 530;
+    transition: .3s ease;
+}
+
+.bar a::after {
+    content: '';
+    position: absolute;
+    background: gold;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+
+.bar a:hover {
+    color: gold;
+    transform: .3s ease in out;
+}
+
+.bar a:hover::after {
+    width: 100%;
+}
+
+.bar span{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem 1rem;
+    margin: 2px 5px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 530;
+    transition: .3s ease;
+}
+
+.bar span::after {
+    content: '';
+    position: absolute;
+    background: gold;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+
+.bar span:hover::after {
+    width: 100%;
+}
+
+
+.icons {
+    display: none;
+    transition: .3s ease;
+}
+
+.icons i:hover {
+    color: gold;
+    transition: .3s ease in out;
+}
+
+.container-isi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background: transparent;
+}
+
+.judul {
+    display: flexbox;
+    width: 1000px;
+    height: 250px;
+    background: transparent;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 0px 0px 1px white;
+}
+
+.wc {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 1px #fff;
+}
+
+
+.desk1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: gold;
+    text-shadow: 0 0 2px gold;
+}
+
+.desk2 {
+    position: relative;
+    width: 40rem;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1020px) {
+    .navbar {
+        width: 100%;
+        height: 12vh;
+    }
+
+    .bar span{
+        display: block;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        background: transparent;
+        color: gold;
+    }
+
+    .bar a {
+        display: none;
+    }
+
+    .bar {
+        display: flex;
+    }
+
+    .logo {
+        margin-left: 1px;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .judul {
+        width: 400px;
+    }
+
+    .desk1 {
+        font-size: 25px;
+    }
+
+    .desk2 {
+        font-size: 15px;
+        width: 25rem;
+    }
+
+    .container1 {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        background-image: url(assets/v1016-b-07.jpg);
+        background-size: cover;
+    }
+}
+
+
+
